@@ -64,23 +64,3 @@ class MoveWithAnnotations():
             fu.mover(req_file_list, dst_dir)
         #return (req_img_list, req_file_list)
 
-'''
-req_card_types = ['AT', 'BC', 'PA', 'FSPI']
-req_sides = ['A', 'B']
-req_angles = ['0', '90', '180', '270']
-#req_angles = ['0', '20', '40', '60', '80', '90', '180', '270']
-
-req_class_list = ['_'.join([c_ty, c_sd, c_ag]) 
-                            for c_ty in req_card_types
-                                for c_sd in req_sides
-                                    for c_ag in req_angles]
-
-## annotate image names
-#fu.annotate_name('/media/FourT/uniquare/local/normalizedSingleSeptember/Training/modeA', 
-#                    '_modeC_up_right')
-move_from_xml('/media/FourT/uniquare/local/normalizedSingleSeptember/Testing/modeA', 
-                req_class_list,
-                '/media/FourT/uniquare/local/uniquare_multilables/tfod2/workspace/inference/inputs_mode_A_norm_ortho/',
-                include_xml=True,
-                )
-'''
